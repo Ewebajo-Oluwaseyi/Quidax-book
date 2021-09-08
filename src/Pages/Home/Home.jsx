@@ -1,6 +1,5 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import BooksCarousel from '../../Components/Home/BooksCarousel/index';
-import BookData from '../../Components/data';
 import Books from '../../Components/Home/Books/index'
 import {AnimatePresence} from 'framer-motion';
 import Cart from '../../Components/Cart/index'

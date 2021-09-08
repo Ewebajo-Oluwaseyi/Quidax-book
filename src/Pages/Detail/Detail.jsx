@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import BookDatas from '../../Components/data';
 import './Detail.css';
 import {useParams, useHistory} from "react-router-dom"
 import ReactStars from "react-rating-stars-component";

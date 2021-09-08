@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import Details from './Pages/Detail/Detail';
 import CartContextProvider from './Context/cartContext'
 import BookContextProvider from './Context/bookContext'
-import {BrowserRouter as HashRouter, Router, Switch, Route,} from "react-router-dom";
+import {BrowserRouter as HashRouter, Switch, Route,} from "react-router-dom";
 import SearchPage from './Pages/SearchPage/SearchPage'
 import { ApolloClient, ApolloProvider } from "@apollo/client"
 import {InMemoryCache} from '@apollo/client';

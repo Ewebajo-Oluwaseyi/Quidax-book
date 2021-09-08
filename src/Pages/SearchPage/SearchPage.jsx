@@ -10,7 +10,7 @@ import Loader from '../../Components/Loader/index';
 
 function SearchPage() {
     const {cartIsOpen} = useContext(CartContext);
-   const {searchedBooks, query, setAllBooks} = useContext(BookContext);
+   const {searchedBooks, query } = useContext(BookContext);
    console.log(searchedBooks)
     const history = useHistory();
    if (searchedBooks && searchedBooks.length === 0 && query === null){
