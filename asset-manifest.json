@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Quidax-book/static/css/main.0b0724a7.chunk.css",
-    "main.js": "/Quidax-book/static/js/main.22d37d35.chunk.js",
-    "main.js.map": "/Quidax-book/static/js/main.22d37d35.chunk.js.map",
+    "main.js": "/Quidax-book/static/js/main.25fd8a2e.chunk.js",
+    "main.js.map": "/Quidax-book/static/js/main.25fd8a2e.chunk.js.map",
     "runtime-main.js": "/Quidax-book/static/js/runtime-main.e4aac220.js",
     "runtime-main.js.map": "/Quidax-book/static/js/runtime-main.e4aac220.js.map",
     "static/css/2.591db2b6.chunk.css": "/Quidax-book/static/css/2.591db2b6.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.591db2b6.chunk.css",
     "static/js/2.00b95e99.chunk.js",
     "static/css/main.0b0724a7.chunk.css",
-    "static/js/main.22d37d35.chunk.js"
+    "static/js/main.25fd8a2e.chunk.js"
   ]
 }
