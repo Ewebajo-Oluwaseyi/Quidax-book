@@ -152,7 +152,7 @@ function Details() {
                     <div className="description">{book.full_description}</div>
                 </div>
 
-                {book.available_copies > 0 && (<div className="mobile-cart-button">
+                {book.available_copies > 0 && (<div className="mobile-cart-button" onClick={(e) => addToCart(e, book)}>
                     <button type="button" className="details-cart-button">
                         <span className="btn-icon">
                             <svg width="24" height="24" className="cart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
