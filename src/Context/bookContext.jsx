@@ -1,5 +1,4 @@
 import {createContext, useState} from 'react';
-import Book from '../Components/data.js';
 import { GET_BOOKS } from "../quaries/getAllBooks";
 import { useQuery } from "@apollo/client";
 
