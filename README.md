@@ -28,7 +28,7 @@ Your app is ready to be deployed!
 
 ### Links
 
-- Live Site URL: [Nelitfy]()
+- Live Site URL: [Nelitfy](https://quidax-sheifunmi.netlify.app/)
 
 ### Built with
 
