@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Quidax/static/css/main.bbc91596.chunk.css",
+    "main.js": "/Quidax/static/js/main.35e2f580.chunk.js",
+    "main.js.map": "/Quidax/static/js/main.35e2f580.chunk.js.map",
+    "runtime-main.js": "/Quidax/static/js/runtime-main.a497f3a5.js",
+    "runtime-main.js.map": "/Quidax/static/js/runtime-main.a497f3a5.js.map",
+    "static/css/2.591db2b6.chunk.css": "/Quidax/static/css/2.591db2b6.chunk.css",
+    "static/js/2.6a5d85e7.chunk.js": "/Quidax/static/js/2.6a5d85e7.chunk.js",
+    "static/js/2.6a5d85e7.chunk.js.map": "/Quidax/static/js/2.6a5d85e7.chunk.js.map",
+    "static/js/3.be27a816.chunk.js": "/Quidax/static/js/3.be27a816.chunk.js",
+    "static/js/3.be27a816.chunk.js.map": "/Quidax/static/js/3.be27a816.chunk.js.map",
+    "index.html": "/Quidax/index.html",
+    "static/css/2.591db2b6.chunk.css.map": "/Quidax/static/css/2.591db2b6.chunk.css.map",
+    "static/css/main.bbc91596.chunk.css.map": "/Quidax/static/css/main.bbc91596.chunk.css.map",
+    "static/js/2.6a5d85e7.chunk.js.LICENSE.txt": "/Quidax/static/js/2.6a5d85e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a497f3a5.js",
+    "static/css/2.591db2b6.chunk.css",
+    "static/js/2.6a5d85e7.chunk.js",
+    "static/css/main.bbc91596.chunk.css",
+    "static/js/main.35e2f580.chunk.js"
+  ]
+}
