@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](./Quidax.PNG)
+![](./Quidax.png)
 
 ## To run the app and install all dependencies
 

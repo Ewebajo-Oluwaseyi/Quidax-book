@@ -4,6 +4,8 @@ import { cartVar, CartContext, cartSubtotal } from '../../Context/cartContext';
 import {motion} from 'framer-motion';
 import { useReactiveVar } from "@apollo/client"
 import CartItem from './cartItem';
+import Arrow from './arrow.svg';
+import CartIcon from './cart.svg'
 function Cart() {
 
     const {toggleCart} = useContext(CartContext);
@@ -22,14 +24,14 @@ function Cart() {
                         <div className="cart-header">
                             <div className="icon-wrapper">
                                 <button className="icon-button" onClick={toggleCart}>
-                                    <img src="image/arrow.svg" alt="back-icon"/>
+                                    <img src={Arrow} alt="back-icon"/>
                                 </button>
                                 <span className="icon-title">Back</span>
                             </div>
                             <div className="icon-wrapper">
                                 <span className="icon-title">Your Cart</span>
                                 <button className="icon-button">
-                                    <img src="image/cart.svg" alt="back-icon"/>
+                                    <img src={CartIcon} alt="back-icon"/>
                                 </button>
                             </div>
                         </div>
@@ -44,7 +46,7 @@ function Cart() {
                             <div className="cart-footer">
                                 <div className="summary">
                                     <p className="summary-title">Subtotal</p>
-                                    <p className="summary-total">${subTotal}</p>
+                                    <p className="summary-total">${subTotal.toFixed(2)}</p>
                                 </div>
                                 <button type="button" className="cart-btn">
                                     <span className="btn-icon">
