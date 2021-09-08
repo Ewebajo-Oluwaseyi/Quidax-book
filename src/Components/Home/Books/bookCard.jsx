@@ -30,14 +30,14 @@ function BookCard({book}) {
                     <h4>{book.title}</h4>
                 </Link>
                 <div className="descriptions">
-                    <p className="author">  {book.authors.slice(0,2).map((author, i) => {
+                    <p className="author">  {book.authors.slice(0,1).map((author, i) => {
                             return (
-                                <span key={i}>{author.name}{ i !== book.authors.length - 1 ? ', ': ''}</span>
+                                <span key={i}>{author.name}</span>
                             )
                         })}</p>
-                    <p className="tags">{book.tags.slice(0,2).map((tag, i) => {
+                    <p className="tags">{book.tags.slice(0,1).map((tag, i) => {
                             return (
-                                <span key={i}>{tag.name}{ i !== book.tags.length - 1 ? ', ': ''}</span>
+                                <span key={i}>{tag.name}</span>
                             )
                         })}</p>
                 </div>

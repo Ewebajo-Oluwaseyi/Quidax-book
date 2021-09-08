@@ -51,29 +51,29 @@
 .detail-meta .out-stock {
   color: #c12402;
 }
-#detail-head main {
+#detail-head .detail-main {
   margin-left: 23%;
   padding: 3rem 8rem;
   width: 77%;
   overflow: auto;
   margin-top: 4rem;
 }
-main .content {
+.detail-main .detail-contentntent {
   width: 100%;
   padding-top: 2rem;
 }
-main .content .title {
+.detail-main .detail-content .title {
   font-size: 2.5rem;
 }
-main .content .author {
+.detail-main .detail-content .author {
   margin-top: 0.8rem;
   line-height: 0.1rem;
 }
-main .content .author .year {
+.detail-main .detail-content .author .year {
   margin-top: 0.8rem;
   font-size: 0.9rem;
 }
-main .content .content-meta {
+.detail-main .detail-content .content-meta {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
@@ -207,7 +207,7 @@ main .content .content-meta {
   .aside-button {
     display: none;
   }
-  main {
+  #detail-head .detail-main {
     width: 100%;
     margin-left: 0%;
     padding: 0.5rem 1rem;
@@ -237,13 +237,13 @@ main .content .content-meta {
     font-weight: lighter;
     font-size: 1.5rem;
   }
-  .content {
+  .detail-content {
     padding-top: 0.5rem;
   }
-  .content .title {
+  .detail-content .title {
     font-size: 1.8rem;
   }
-  main .content .content-meta {
+  .detail-main .detail-content .content-meta {
     flex-direction: column;
   }
   .genre_tags {

@@ -11,8 +11,8 @@ import Loader from '../../Components/Loader/index';
 
 function Body() {
     const { loading, data } = useQuery(GET_BOOKS);
-    //console.log(data && data.books)
-    const [books] = useState(data && data.books);
+    console.log(data && data.books)
+    const books = data && data.books;
     const {cartOpen} = useContext(CartContext);
 
 
@@ -22,7 +22,7 @@ function Body() {
 
     return (
         <>
-            <div className="body">
+            <div>
             <BooksCarousel books={books}/>
             <Books books={books}/>
             </div>

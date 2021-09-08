@@ -3,7 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 
 function Book({book}) {
- //  console.log(book)
+   console.log(book)
     return (
         <Link to={`/books/${book.id}`}>
             <div className="item book-item">

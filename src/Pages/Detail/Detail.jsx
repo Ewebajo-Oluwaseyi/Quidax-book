@@ -79,8 +79,8 @@ function Details() {
                 </div>)}
             </div>
 
-            <main>
-                <div className="content">
+            <main className="detail-main">
+                <div className="detail-content">
                    <h1 className="title">{book.title}</h1>
                     <div className="author">
                         <h5>{book.authors[0].name}</h5>

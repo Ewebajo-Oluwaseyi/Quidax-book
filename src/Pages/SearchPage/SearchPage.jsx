@@ -6,6 +6,7 @@ import BookCard from "../../Components/Home/Books/bookCard";
 import {AnimatePresence} from 'framer-motion';
 import { BookContext } from "../../Context/bookContext";
 import {useHistory} from "react-router-dom";
+import Loader from '../../Components/Loader/index';
 
 function SearchPage() {
     const {cartIsOpen} = useContext(CartContext);
@@ -16,6 +17,9 @@ function SearchPage() {
         history.push('/')
     }
    //console.log(searchedBooks)
+   if (searchedBooks === []) {
+    return <Loader />
+  }
     return (
         <>
             <div id="search">

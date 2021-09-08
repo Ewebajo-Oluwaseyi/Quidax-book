@@ -74,6 +74,11 @@
 .stat-and-rating .left-meta .stat-left span {
   font-size: 0.8rem;
 }
+.stat-and-rating .left-meta .stat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .stat-and-rating .right-meta {
   border-left: 1px solid #eeeeee;
   padding: 0 0.7em;
@@ -121,10 +126,14 @@
     padding: 1rem 1.5rem;
   }
   .book-wrapper {
+    padding: 0rem 1rem;
     grid-column-gap: 0px;
-    grid-row-gap: 30px;
+    grid-row-gap: 20px;
     grid-template-columns: 1fr;
     padding: 1rem 1rem;
+  }
+  .book-wrapper .books-item {
+    margin-top: 1rem;
   }
   .img-wrapper {
     width: 35%;
@@ -132,5 +141,11 @@
 
   .book-details {
     width: 65%;
+  }
+  .stat-and-rating {
+    margin-top: 0.1rem;
+  }
+  .price-instock {
+    margin-top: 0.84rem;
   }
 }

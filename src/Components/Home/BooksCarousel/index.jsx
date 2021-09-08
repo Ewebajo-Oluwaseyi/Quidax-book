@@ -7,6 +7,7 @@ import Book from './book.jsx'
 
 class index extends Component {
     render() {
+   console.log(this.props.books && this.props.books)
       const featureBook = this.props.books && this.props.books.filter((book) => book.featured)
       const self = this;
       const options = {
