@@ -1,0 +1,147 @@
+#featured-books {
+  margin-top: 7rem;
+}
+#featured-books .title {
+  width: 100%;
+  padding: 1rem 3rem;
+}
+#featured-books .title h4 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.featured-container {
+  height: 22rem;
+  width: 100%;
+  position: relative;
+}
+.featured-container .featured-books-wrapper {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  -webkit-box-shadow: 0px 25px 44px 16px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 25px 44px 16px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 25px 44px 16px rgba(0, 0, 0, 0.28);
+}
+.featured-container .featured-books-wrapper .left-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(242, 236, 247, 0.9),
+    rgba(242, 236, 247, 0.7),
+    rgba(242, 236, 247, 0.08)
+  );
+  border-right: 1px solid rgba(242, 236, 247, 0.5);
+}
+.featured-container .featured-books-wrapper .right-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(242, 236, 247, 0.9),
+    rgba(242, 236, 247, 0.7),
+    rgba(242, 236, 247, 0.08)
+  );
+  border-right: 1px solid rgba(242, 236, 247, 0.5);
+}
+.featured-container .featured-books-wrapper .book-item {
+  height: inherit;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+.book-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.book-item:hover .hoverBook {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out 0.2s;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.top-section {
+  padding: 1.5rem;
+  color: white;
+}
+.top-section .status {
+  font-size: 0.8rem;
+  color: #66c100;
+}
+.top-section .author {
+  margin-top: 0.5rem;
+}
+dt {
+  margin-top: 1.1rem;
+  letter-spacing: 0.02rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+dl {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 1.5rem;
+}
+.bottom-section .left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+.bottom-section .left-side .stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-section .left-side .stats span {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 480px) {
+  #featured-books {
+    margin-top: 6rem;
+  }
+  #featured-books .title {
+    display: none;
+  }
+  .top-section {
+    padding: 1rem 1rem;
+  }
+  .bottom-section {
+    padding: 0 1rem;
+  }
+}

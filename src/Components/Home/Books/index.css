@@ -1,0 +1,136 @@
+.books {
+  margin-top: 4rem;
+}
+.title-section {
+  width: 100%;
+  padding: 1rem 3rem;
+}
+.title-section .title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.book-wrapper {
+  padding: 0rem 3rem;
+  display: grid;
+  width: 100%;
+  grid-column-gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 60px;
+}
+.book-wrapper .books-item {
+  background-color: white;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+}
+.book-wrapper .books-item:hover {
+  -webkit-box-shadow: 19px 28px 35px 2px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 19px 28px 35px 2px rgba(0, 0, 0, 0.17);
+  box-shadow: 19px 28px 35px 2px rgba(0, 0, 0, 0.17);
+}
+.img-wrapper {
+  width: 30%;
+  height: 100%;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.book-details {
+  width: 70%;
+  padding: 0.3rem 1rem;
+}
+.book-details .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.descriptions {
+  font-size: 0.8rem;
+}
+.descriptions .author {
+  margin-top: 0.2rem;
+}
+.descriptions .tag {
+  margin-top: -0.1rem;
+}
+.stat-and-rating {
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+.stat-and-rating .left-meta {
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.stat-and-rating .left-meta .stat-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+.stat-and-rating .left-meta .stat-left span {
+  font-size: 0.8rem;
+}
+.stat-and-rating .right-meta {
+  border-left: 1px solid #eeeeee;
+  padding: 0 0.7em;
+}
+.price-instock {
+  margin-top: 0.8rem;
+  display: flex;
+  font-size: 0.8rem;
+}
+.price-instock .price {
+  margin-right: 1.2rem;
+}
+.price-instock .stock {
+  color: #66c100;
+}
+.price-instock .out-stock {
+  color: #c12402;
+}
+.add-cart {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add-cart .icon {
+  margin-right: 1rem;
+}
+.add-cart .title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .book-wrapper {
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .books {
+    margin-top: 1rem;
+  }
+  .title-section {
+    padding: 1rem 1.5rem;
+  }
+  .book-wrapper {
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+  .img-wrapper {
+    width: 35%;
+  }
+
+  .book-details {
+    width: 65%;
+  }
+}

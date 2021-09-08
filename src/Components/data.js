@@ -1,0 +1,76 @@
+const book = [
+    {
+        id: 1,
+        image: "https://res.cloudinary.com/quidaxengineering/image/upload/v1611741483/feec/the-effective-engineer-cover_bgj7u4.jpg",
+        title: "The Effective Engineer",
+        authors: "Edmond Lau",
+        date: "2009",
+        genre: "",
+        tags: "Motivation",
+        number_of_purchases: "31",
+        likes: "29",
+        rating: "4.0",
+        price: "29.99",
+        available_copies: 23,
+        subtitle: "How to Leverage Your Efforts In Software Engineering to Make a Disproportionate and Meaningful Impact",
+        description: "The most effective engineers — the ones who have risen to become distinguished engineers and leaders at their companies — can produce 10 times the impact of other engineers, but they're not working 10 times the hours.\n\nThey've internalized a mindset that took me years of trial and error to figure out. I'm going to share that mindset with you — along with hundreds of actionable techniques and proven habits — so you can shortcut those years.\n\nIntroducing The Effective Engineer — the only book designed specifically for today's software engineers, based on extensive interviews with engineering leaders at top tech companies, and packed with hundreds of techniques to accelerate your career.\n\nFor two years, I embarked on a quest seeking an answer to one question:\n\nHow do the most effective engineers make their efforts, their teams, and their careers more successful?\n\nI interviewed and collected stories from engineering VPs, directors, managers, and other leaders at today's top software companies: established, household names like Google, Facebook, Twitter, and LinkedIn; rapidly growing mid-sized companies like Dropbox, Square, Box, Airbnb, and Etsy;"
+    },
+    {
+        id: 2,
+        image: "image/built-to-last.png",
+        title: "Build To last",
+        authors: "Jim Collins, Jerry I. Porras",
+        date: "2001",
+        genre: "",
+        tags: "Business, Entrepreneurship",
+        number_of_purchases: "31",
+        likes: "29",
+        rating: "4.0",
+        price: "29.99",
+        available_copies: 23
+    },
+    {
+        id: 3,
+        image: "image/the-lean-startup.png",
+        title: "The Lean Startup",
+        authors: "Eric Reis",
+        date: "2005",
+        genre: "",
+        tags: "Business, Entrepreneurship",
+        number_of_purchases: "31",
+        likes: "29",
+        rating: "4.0",
+        price: "29.99",
+        available_copies: 23
+    },
+    {
+        id: 4,
+        image: "image/effective-python.png",
+        title: "Effective Python",
+        authors: "Diomidis Spinellis",
+        date: "2005",
+        genre: "",
+        tags: "Motivation",
+        number_of_purchases: "31",
+        likes: "29",
+        rating: "4.0",
+        price: "29.99",
+        available_copies: 23
+    },
+    {
+        id: 5,
+        image: "image/big-magic.png",
+        title: "Big Magic",
+        authors: "Elizabert Gilbert",
+        date: "2014",
+        genre: "",
+        tags: "Motivation",
+        number_of_purchases: "31",
+        likes: "29",
+        rating: "4.0",
+        price: "29.99",
+        available_copies: 23
+    },
+]
+
+export default book;

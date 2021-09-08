@@ -1,0 +1,117 @@
+#cart {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end;
+}
+aside {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 51;
+  background-color: #fefefe;
+}
+.cart-header {
+  padding: 0 1.5rem;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  background-color: white;
+}
+.body {
+  padding: 0 2rem;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+.icon-wrapper .icon-button {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+.icon-wrapper .icon-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  line-height: 0.75rem;
+  margin-right: 0.5rem;
+}
+.cart-empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-footer {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.cart-footer .summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+.cart-footer .summary .summary-title {
+  font-size: 0.9rem;
+}
+.cart-footer .summary .summary-total {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: black;
+}
+.cart-btn {
+  width: 80%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0rem 2rem;
+  background-color: black;
+  -webkit-box-shadow: -1px 25px 100px 9px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -1px 25px 100px 9px rgba(0, 0, 0, 0.28);
+  box-shadow: -1px 25px 100px 9px rgba(0, 0, 0, 0.28);
+}
+.cart-btn .btn-title {
+  margin-left: 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  aside {
+    width: 100%;
+  }
+  .cart-header {
+    padding: 1rem 1rem;
+    height: 5rem;
+  }
+  .body {
+    padding: 0 1.5rem;
+  }
+}

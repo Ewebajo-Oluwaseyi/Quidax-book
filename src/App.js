@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './Components/Header/header';
+import Home from './Pages/Home/Home';
+import Details from './Pages/Detail/Detail';
+import CartContextProvider from './Context/cartContext'
+import BookContextProvider from './Context/bookContext'
+import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
+import SearchPage from './Pages/SearchPage/SearchPage'
+import { ApolloClient, ApolloProvider } from "@apollo/client"
+import {InMemoryCache} from '@apollo/client';
 
 function App() {
+
+  const client = new ApolloClient({
+    uri: "https://quidax-feec-graphql.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      typePolicies: {
+        Query: {
+          fields: {}
+        }
+      }
+    })
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CartContextProvider>
+        <Router>
+          <ApolloProvider client={client}>
+          <BookContextProvider>
+            <Header/>
+            <Switch>
+              <Route exact path="/">
+                <Home/>
+              </Route>
+              <Route exact path="/search">
+                <SearchPage/>
+              </Route>
+              <Route exact path="/books/:id">
+                <Details/>
+              </Route>
+            </Switch>
+          </BookContextProvider>
+          </ApolloProvider>
+        </Router>
+      </CartContextProvider>
     </div>
   );
 }
