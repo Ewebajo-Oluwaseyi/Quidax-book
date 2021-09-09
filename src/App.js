@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import Details from './Pages/Detail/Detail';
 import CartContextProvider from './Context/cartContext'
 import BookContextProvider from './Context/bookContext'
-import {BrowserRouter as HashRouter, Switch, Route,} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import SearchPage from './Pages/SearchPage/SearchPage'
 import { ApolloClient, ApolloProvider } from "@apollo/client"
 import {InMemoryCache} from '@apollo/client';
@@ -22,14 +22,13 @@ function App() {
     })
   });
   return (
-    <div>
+    <Router>
       <CartContextProvider>
-        <HashRouter basename="/">
           <ApolloProvider client={client}>
           <BookContextProvider>
             <Header/>
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
                 <Home/>
               </Route>
               <Route exact path="/search">
@@ -41,9 +40,8 @@ function App() {
             </Switch>
           </BookContextProvider>
           </ApolloProvider>
-        </HashRouter>
       </CartContextProvider>
-    </div>
+    </Router>
   );
 }
 
